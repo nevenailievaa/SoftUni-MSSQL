@@ -252,5 +252,6 @@ AS
 	JOIN PlayersRanges AS pr ON b.PlayersRangeId = pr.Id
 	WHERE c.[Name] IN (@category)
 	ORDER BY p.[Name], b.YearPublished DESC
-
+	
+-- Don't submit that:
 EXEC usp_SearchByCategory 'Wargames'
