@@ -6,6 +6,7 @@ CREATE TABLE NotificationEmails
 	Body VARCHAR(255)
 )
 
+-- Paste into Judge from here
 CREATE TRIGGER tr_CreateNewEmailOnNewLogEntry
 ON Logs FOR INSERT
 AS
