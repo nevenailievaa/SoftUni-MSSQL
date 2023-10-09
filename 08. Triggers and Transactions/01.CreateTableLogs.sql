@@ -1,12 +1,3 @@
-CREATE TABLE [Logs]
-(
-	[LogId] INT IDENTITY,
-	[AccountId] INT FOREIGN KEY REFERENCES Accounts(Id),
-	[OldSum] DECIMAL(18, 4),
-	[NewSum] DECIMAL(18, 4)
-)
-GO
-
 CREATE TRIGGER tr_AddToLogsOnAccountUpdate
 ON [Accounts] FOR UPDATE
 AS
