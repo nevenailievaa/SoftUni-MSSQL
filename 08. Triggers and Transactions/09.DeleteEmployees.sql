@@ -10,7 +10,7 @@ CREATE TABLE Deleted_Employees
 )
 GO
 
-
+-- Paste into Judge from here
 CREATE TRIGGER tr_AddEntityToDeletedEmployeesTable
 ON Employees FOR DELETE
 AS
