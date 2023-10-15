@@ -192,6 +192,7 @@ BEGIN
     RETURN @TotalTourists
 END
 
+--Don't paste this into Judge, it is only to check the result:
 SELECT dbo.udf_RoomsWithTourists('Double Room')
 
 
@@ -212,4 +213,5 @@ BEGIN
     ORDER BY t.[Name] ASC, CountOfBookings DESC
 END
 
+--Don't paste this into Judge, it is only to check the result:
 EXEC usp_SearchByCountry 'Greece'
